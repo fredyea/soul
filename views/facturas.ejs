@@ -1,0 +1,32 @@
+<%- include ('partials/head.ejs') %>
+<div class="container my-5">
+    <h2>Generador de Facturacion Manual</h2>
+    <form id="formulario" action="/newfactura" method="post">
+        <input type="text" id = "documento" name="documento" placeholder="Ingrese el documento del cliente" class="form-control my-3">
+        <input type="text" id = "nombres" name="nombres" placeholder="Ingrese el nombre o razon Social del Clientes" class="form-control my-3">
+        <input type="text" id = "apellidos" name="apellidos" placeholder="Ingrese el apellido del cliente" class="form-control my-3">
+        <input type="text" id = "email" name="email" placeholder="Ingrese el email cliente" class="form-control my-3">
+        <input type="text" id = "celular" name="celular" placeholder="Ingrese el celular" class="form-control my-3">
+        <input type="text" id = "direccion" name="direccion" placeholder="Ingrese la direccion" class="form-control my-3">
+        <input type="text" id = "factura" name="factura" placeholder="Ingrese el numero de la factura" class="form-control my-3">
+        <input type="number" id = "valor" name="valor" placeholder="Ingrese el valor de la factura" class="form-control my-3">
+        <input type="number" id = "iva" name="iva" placeholder="Ingresa el valor iva" class="form-control my-3">
+        <input type="text" id = "concepto" name="concepto" placeholder="Ingresa el concepto de la factura" class="form-control my-3">
+        <button class="btn btn-primary" type="submit">Generar Factura</button>
+    </form>
+    <div class="mt-3" id="respuesta">
+        
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+<%- include ('partials/footers.ejs') %>
